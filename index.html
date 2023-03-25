@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>Website @AboleeZadbuke</title>
     </head>
     <body>
         <header id="header">
-            <div>
-                <h1><a href="#">@AboleeZadbuke</a></h1>
+            <div> 
+                <h1><a href="#" class="logo">@AboleeZadbuke</a></h1>
                 <nav>
                     <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="navigation">Work</a></li>
+                    <li><a href="about.html" class="navigation">About</a></li>
+                    <li><a href="#contact" class="navigation">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
             <div>
-                <div>
+                <div id="hero-image">
+                    <div class="hero-text">
                     <h1>Hello! I’m Abolee</h1>
                     <span>An artist/designer based in India</span>
+                    </div>
                 </div>
-                <p>Focused on UI design, UX research and Visual designing.<br>I aim to define, design and deliver interesting,<br>organized and simple solutions to my users.</p>
+                <p class="h6">Focused on UI design, UX research and Visual designing.<br>I aim to define, design and deliver interesting,<br>organized and simple solutions to my users.</p>
             </div>
         <br>
-        <div>
+        <div id="work">
             <div><!-- container-->
                 <h2>My Work</h2> 
                 <div> <!-- row-->
@@ -40,7 +50,7 @@
                         <h3>PetsFair: A pet-centric app</h3>
                         <p>PetsFair is a pet-centric app that provides services like <br>pet adoption, healthcare, and finding the right <br>pet sitter at your fingertips.</p>
                         <p>Contribution: UX research, UI design and branding.</p>
-                        <a href="project.html">View project</a>
+                       <button><a href="project.html">View project</a></button>
                     </div>
                 </div>
                 <br>
@@ -53,21 +63,21 @@
                         <h3>Platter: A recipe web app</h3>
                         <p>Platter is a responsive recipe web app. It will serve as a cookbook <br>and an interactive platform for people all over the world, allowing users to share and learn recipes from various cooks across the world in their language of choice.</p>
                         <p>Contribution: UX research, UI design and branding.</p>
-                        <a href="#">View project</a>
+                        <button><a href="#" class="primary-button">View project</a></button>
                     </div>
                 </div>
             </div>
         </div>
         </main>
         <br>
-        <a href="#header">Go to the top</a>
+        <a href="#header" class="link">Go to the top</a>
         <footer id="contact">
             <div>
                 <h3>Let’s Connect</h3>
                 <p>Do you like my work and want to discuss opportunities? Please get in touch. <br>Call <a href="tel:+91-0000 0000 00">+91-0000 0000 00</a></p>
             </div>
             <div>
-                <a href="mailto:aboleezadbuke@gmail.com">Send Email</a>
+               <button><a href="mailto:aboleezadbuke@gmail.com">Send Email</a></button>
             </div>
             <br>
             <div>
