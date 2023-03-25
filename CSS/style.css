@@ -1,55 +1,124 @@
-
-
-
- 
-body {
-background-color: #ffffff;   
+/* Basic Styling */
+h1 {
+    font-size: 28px; /* sets font-size to 28px */
+    line-height: 1.6; /* sets line height to 1.6 * the font-size */
 }
+
+h2 {
+    font-size: 24px;  /* sets font-size to 24px */
+    line-height: 1.6; /* sets line height to 1.6 * the font-size */
+}
+
+h3 {
+    font-size: 21px;  /* sets font-size to 24px */
+    line-height: 1.6; /* sets line height to 1.6 * the font-size */
+}
+
+
+
+
+
+
+
+/* BODY STYLING */
+
+body {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 18px; /* sets font-size to 18px */
+    line-height: 1.6; /* sets line height to 1.6 * the font-size */
+    font-weight: 400;
+}
+
+
 
 img {
-    
-    width: 100%
-}
-
-
-
-h1, h2, h3 {
-    font-weight: bold
-}
-
-
-
-h1 {
-    font-size: 30px;
-}
-
-
-/*Layout columns*/
-
-.container {
-    
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-.row {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    
 }
 
 
+/* HEADER STYLING */
 
-.column {
-    width: 50%;
-    padding:2%
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px; /* sets font-size to 21px */
 }
 
-
-/*header*/
 .logo {
-    width: 200px;
-    
+    color: #000000;
+    text-decoration: none;
+    font-size: 28px;
 }
+
+
+
+
+nav{
+    background-color: #F2F2F2;
+}
+
+.navigation {
+    color: #8c8b8b;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.navigation:hover {
+    color: #000000;/* HOVERED LINKS*/
+
+}
+
+.navigation:active {
+    color: #0f605e; /* ACTIVE LINKS*/
+
+}
+
+.navigation:focus {
+    border: 1px solid #393737 ; /* FOCUS LINKS*/
+
+}
+
+
+
+
+/* MAIN STYLING */
+button{
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 2px;
+    border-color: #a4a4a4;
+}
+
+button:hover {
+    background-color: #7ab9b7;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+button:active {
+    background-color: #34a5a1;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+button:focus {
+ border: 2px solid #095351;
+}
+
+
+
+a.link {
+    color: #03CDCA;
+}
+
+.link:hover {
+    color: #0f605e;
+}
+
+
+
+
+
+
+
+/*ABOUT PAGE*/
