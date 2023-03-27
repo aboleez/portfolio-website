@@ -69,6 +69,7 @@ nav{
 
 .navigation:active {
     color: #0f605e; /* ACTIVE LINKS*/
+    font-weight: 400;
 
 }
 
@@ -81,27 +82,28 @@ nav{
 
 
 /* MAIN STYLING */
-button{
+.button{
     font-family: 'Montserrat', sans-serif;  
     font-size: 15px;
     padding: 10px 20px;
     border: 2px;
     border-color: #a4a4a4;
+    border: #34a5a1;
 }
 
-button:hover {
+.button:hover {
     background-color: #7ab9b7;
     color: #ffffff;
     font-weight: 500;
 }
 
-button:active {
+.button:active {
     background-color: #34a5a1;
     color: #ffffff;
     font-weight: 500;
 }
 
-button:focus {
+.button:focus {
  border: 2px solid #095351;
 }
 
@@ -121,4 +123,3 @@ a.link {
 
 
 
-/*ABOUT PAGE*/
