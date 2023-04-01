@@ -7,12 +7,14 @@
 h1 {
     font-size: 28px; /* sets font-size to 28px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
+    text-align: center;
 }
 
 h2 {
     font-size: 24px;  /* sets font-size to 24px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
     text-align: center;
+    margin: 0%;
 }
 
 h3 {
@@ -24,6 +26,7 @@ h4 {
     font-size: 18px; /* sets font-size to 24px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
     text-align: center;
+    margin-top: 00%;
 }
 
 
@@ -144,7 +147,7 @@ nav{
 /* MAIN STYLING */
 
 main {
-    padding-top: 80px;
+    padding-top: none;
 }
 
 #hero {
