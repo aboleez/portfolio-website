@@ -1,4 +1,9 @@
 /* Basic Styling */
+
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 28px; /* sets font-size to 28px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
@@ -7,6 +12,7 @@ h1 {
 h2 {
     font-size: 24px;  /* sets font-size to 24px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
+    text-align: center;
 }
 
 h3 {
@@ -14,6 +20,11 @@ h3 {
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
 }
 
+h4 {
+    font-size: 18px; /* sets font-size to 24px */
+    line-height: 1.6; /* sets line height to 1.6 * the font-size */
+    text-align: center;
+}
 
 
 
@@ -36,24 +47,71 @@ img {
 }
 
 
+
+
+
+
 /* HEADER STYLING */
 
-header {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 21px; /* sets font-size to 21px */
-}
 
 .logo {
     color: #000000;
     text-decoration: none;
     font-size: 28px;
+    text-align: center; /* center alignment to the title */
+    max-width: 250px;
 }
+
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* sets font-size to 21px */
+    background-color:#F2F2F2;
+    margin: 0;/* adds 10px outer on all sides */
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 1px; 
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    opacity: 100%;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+
 
 
 
 
 nav{
     background-color: #F2F2F2;
+    width: 100%;
+    font-size: 15px;
 }
 
 .navigation {
@@ -63,25 +121,52 @@ nav{
 }
 
 .navigation:hover {
-    color: #000000;/* HOVERED LINKS*/
+    color: #000000;/* HOVERED LINKS */
 
 }
 
 .navigation:active {
-    color: #0f605e; /* ACTIVE LINKS*/
+    color: #0f605e; /* ACTIVE LINKS */
     font-weight: 400;
 
 }
 
 .navigation:focus {
-    border: 1px solid #393737 ; /* FOCUS LINKS*/
+    border: 1px solid #393737 ; /* FOCUS LINKS */
 
 }
 
 
 
 
+
+
 /* MAIN STYLING */
+
+main {
+    padding-top: 80px;
+}
+
+#hero {
+background-color: #F2F2F2;;
+padding: 20px 0;
+display: inline-block;
+width: 100%;
+text-align: center;
+}
+
+
+
+#hero h1 {
+    text-align: center; /* center alignment to the title */
+}
+
+
+#hero p {
+    text-align: center; /* center alignment to the title */
+}
+
+
 .button{
     font-family: 'Montserrat', sans-serif;  
     font-size: 15px;
@@ -111,6 +196,7 @@ nav{
 
 a.link {
     color: #03CDCA;
+    padding: 0 20px;
 }
 
 .link:hover {
@@ -118,6 +204,46 @@ a.link {
 }
 
 
+
+ 
+
+
+/* LAYOUT STYLING */
+
+.container {
+    padding: 0 15px;
+}
+
+
+
+.row {
+    margin: 20px 0; /*  25px top and bottom, 0 left and right */
+}
+
+#work .row {
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+
+
+
+
+
+
+
+
+/* FOOTER STYLING */
+
+#contact {
+    background-color: #F2F2F2;
+    padding-top: 10px;
+    border-top: 2px solid #989898;
+    }
+    
+    
+    
+#contact .container {
+        padding: 0 15px;
+    }
 
 
 
