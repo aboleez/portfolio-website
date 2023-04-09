@@ -7,7 +7,7 @@
 h1 {
     font-size: 28px; /* sets font-size to 28px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
-    text-align: center;
+    
 }
 
 h2 {
@@ -15,6 +15,7 @@ h2 {
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
     text-align: center;
     margin: 0%;
+    padding: 10px;
 }
 
 h3 {
@@ -61,7 +62,6 @@ img {
     color: #000000;
     text-decoration: none;
     font-size: 28px;
-    text-align: center; /* center alignment to the title */
     max-width: 250px;
 }
 
@@ -71,29 +71,23 @@ header {
     font-size: 18px; /* sets font-size to 21px */
     background-color:#F2F2F2;
     margin: 0;/* adds 10px outer on all sides */
-    border-bottom: 2px solid #000000;
-    text-align: center;
+    text-align: unset;
     position: relative;
     width: 100%;
-}
-
-.css-box-shadow{
-	/*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
-	background: #F8F8F8; 
-	border: solid #BDBDBD 1px; 
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    z-index: 3;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    opacity: 100%;
 }
 
 
 
-header nav ul {
+
+
+header .navigation {
     list-style-type: none;
-    padding: 0px;
+    padding: 10px 5px;
+    margin: 0%;
 }
 
 
@@ -111,16 +105,18 @@ header nav ul li a {
 
 
 
-nav{
+#header nav{
     background-color: #F2F2F2;
-    width: 100%;
+    width: auto;
     font-size: 15px;
+    display: inline;
 }
 
 .navigation {
     color: #8c8b8b;
     text-decoration: none;
     font-weight: 300;
+    display: inline-block;
 }
 
 .navigation:hover {
@@ -169,6 +165,10 @@ text-align: center;
     text-align: center; /* center alignment to the title */
 }
 
+#hero span {
+    display: block;
+}
+
 
 .button{
     font-family: 'Montserrat', sans-serif;  
@@ -215,6 +215,8 @@ a.link {
 
 .container {
     padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -240,6 +242,7 @@ a.link {
     background-color: #F2F2F2;
     padding-top: 10px;
     border-top: 2px solid #989898;
+    text-align:center;
     }
     
     
@@ -248,7 +251,87 @@ a.link {
         padding: 0 15px;
     }
 
+    
+.twit-icon svg {
+    height: 40px;
+  
+     
+ }
+ 
+ 
+ .socials a {
+     text-decoration: none;
+     margin-right: 10px;
+ }
 
 
+ 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+    header { 
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 4px;
+        display: inline-block;
+        
+    }
+
+    .col-md-6 {
+        width: 40%;
+      }
+
+      .col-lg-7 {
+        width: 60%;
+      }
 
 
+      [class*="col-"] {
+        float: left;
+        padding: 10px;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #about-page h3 { margin-top: 0;}
+
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+
+@media only screen and (min-width: 1920px) {
+}
