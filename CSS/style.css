@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -88,6 +90,7 @@ header .navigation {
     list-style-type: none;
     padding: 10px 5px;
     margin: 0%;
+    text-align: right;
 }
 
 
@@ -280,7 +283,6 @@ Medium devices (640px and larger)
         width: 100%;
         margin-top: 4px;
         display: inline-block;
-        
     }
 
     .col-md-6 {
@@ -334,4 +336,25 @@ Extra-large devices (1920px or larger)
 ================================= */
 
 @media only screen and (min-width: 1920px) {
+}
+
+
+
+/* Flexbox work start */
+    
+.flexbox-work .navigation {
+    display: flex;
+	justify-content: space-between;
+}
+
+.flexbox-work .align-left {
+    display: flex;
+	justify-content: flex-start;
+    align-items: center;
+}
+
+.flexbox-work .align-right {
+    display: flex;
+	justify-content: flex-end;
+    align-items: center;
 }
