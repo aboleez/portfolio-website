@@ -9,6 +9,7 @@
 h1 {
     font-size: 28px; /* sets font-size to 28px */
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
+    text-align: center;
     
 }
 
@@ -17,7 +18,7 @@ h2 {
     line-height: 1.6; /* sets line height to 1.6 * the font-size */
     text-align: center;
     margin: 0%;
-    padding: 10px;
+    padding: 30px;
 }
 
 h3 {
@@ -68,7 +69,7 @@ img {
 }
 
 
-header {
+#header {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px; /* sets font-size to 21px */
     background-color:#F2F2F2;
@@ -151,7 +152,7 @@ main {
 
 #hero {
 background-color: #F2F2F2;;
-padding: 20px 0;
+padding: 50px 0;
 display: inline-block;
 width: 100%;
 text-align: center;
@@ -174,18 +175,30 @@ text-align: center;
 
 
 .button{
+    
+    display: inline-block;
+    background-color: #FFBB34;
+    color: #000000;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;  
     font-size: 15px;
-    padding: 10px 20px;
-    border: 2px;
-    border-color: #a4a4a4;
-    border: #34a5a1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 2px solid #BC5D06;
+    transition-duration: 0.2s;
+    transition-property: opacity;
+    margin: 15px 0;
+     
 }
 
 .button:hover {
-    background-color: #7ab9b7;
-    color: #ffffff;
+    background-color: #F9A645;
+    color: #000000;
     font-weight: 500;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .button:active {
@@ -201,8 +214,9 @@ text-align: center;
 
 
 a.link {
-    color: #03CDCA;
+    color: #BC5D06;
     padding: 0 20px;
+    text-decoration:none;
 }
 
 .link:hover {
@@ -210,6 +224,13 @@ a.link {
 }
 
 
+
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
+
+}
 
  
 
@@ -225,7 +246,7 @@ a.link {
 
 
 .row {
-    margin: 20px 0; /*  25px top and bottom, 0 left and right */
+    margin: 10px 0; /*  10px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -233,6 +254,11 @@ a.link {
 }
 
 
+/*ABOUT PAGE */
+
+.align-left .skills {
+    text-align: left;
+}
 
 
 
@@ -254,7 +280,16 @@ a.link {
         padding: 0 15px;
     }
 
-    
+
+#contact .social-link {
+    padding: 10px;
+}
+
+ 
+
+
+
+
 .twit-icon svg {
     height: 40px;
   
@@ -276,7 +311,8 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header { 
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 10px;
+        width: auto;
     }
 
     .navigation {
@@ -292,6 +328,9 @@ Medium devices (640px and larger)
       .col-lg-7 {
         width: 60%;
       }
+
+
+
 
 
       [class*="col-"] {
@@ -340,21 +379,107 @@ Extra-large devices (1920px or larger)
 
 
 
-/* Flexbox work start */
+
+/* Flexbox work start - Index */
     
 .flexbox-work .navigation {
     display: flex;
 	justify-content: space-between;
+    align-items: center;
 }
 
-.flexbox-work .align-left {
+.flexbox-work .align-left .logo {
     display: flex;
 	justify-content: flex-start;
     align-items: center;
 }
 
-.flexbox-work .align-right {
+.flexbox-work .align-right .nav {
     display: flex;
 	justify-content: flex-end;
     align-items: center;
 }
+
+
+
+
+
+
+/* Style navigation bar*/
+
+.flexbox-work .navigation a {
+padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.flexbox-work .link {
+    justify-content: center;
+}
+
+
+/* Flexbox work start - About */
+
+
+.flexbox-work .row {
+    justify-content: start;
+}  
+
+.flexbox-work .intro {
+    justify-content: center;
+    padding: 5px;
+}  
+
+
+.flexbox-work .align-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.flexbox-work .align-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+
+/* CSS Animation */
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
