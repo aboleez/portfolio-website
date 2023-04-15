@@ -486,3 +486,41 @@ padding: 14px 20px;
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
+
+
+
+
+------------------
+
+  .flexbox-example {
+	background-color: transparent;
+	border: 1px dotted black;
+	padding: 0px 20px;
+}
+
+
+
+/* Style the top navigation bar */
+.flexbox-example .navbar {
+	display: flex;
+	justify-content: space-between;
+}
+  
+
+.flexbox-example .align-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.flexbox-example .align-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+/* Style the navigation bar links */
+.flexbox-example .navbar a {
+  color: rgb(45, 45, 45);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
