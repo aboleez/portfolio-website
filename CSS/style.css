@@ -246,7 +246,7 @@ height: auto;
 
 
 .row {
-    margin: 10px 0; /*  10px top and bottom, 0 left and right */
+    margin: 10px 0; /*  20px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -504,6 +504,9 @@ padding: 14px 20px;
 .flexbox-example .navbar {
 	display: flex;
 	justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   
 }
   
 
