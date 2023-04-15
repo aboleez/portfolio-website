@@ -281,9 +281,12 @@ height: auto;
     }
 
 
-#contact .social-link {
-    padding: 10px;
-}
+ .social-link a {
+    text-decoration: none;
+    margin: 0 10px;
+     color: rgb(255, 179, 0);
+     width: 10px;
+ }
 
  
 
