@@ -49,10 +49,10 @@ body {
 
 
 
-
-/* img {
-    width: 200px;
-}  */
+img {
+    width: 50%;
+    height: auto;
+}
 
 
 
@@ -276,9 +276,7 @@ height: auto;
     padding-top: 50px;
     border-top: 2px solid #989898;
     text-align:center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+
     }
     
     
@@ -287,16 +285,6 @@ height: auto;
         padding: 0 15px;
     }
 
-
-.container_image ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.container_image svg{
-    width : 25%;
-}
 
  .social-link a {
     text-decoration: none;
@@ -564,50 +552,9 @@ ul.design progress {
 }
 
 
-/* desig_process_images */
+/*  Practice CSS  */
 
-.design_process_images ul {
-    list-style-type: none;
-    width: 100%;
+.my images {
+    width: 50%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
-
-.design_process_images li {
-    width: 30%;
-}
-
-@media screen and (max-width: 600px) {
-    .design_process_images li {
-      width : 100%;
-    }
-  .color_palette_discription img{
-        width:100%;
-      }
-  }
-
-
-  /* user_flow_image */
-
-  .user_flow_image img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* color_palette_discription */
-
-  .color_palette_discription {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .color_palette_discription p, .color_palette_discription img{
-    width:50%;
-  }
