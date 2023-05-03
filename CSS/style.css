@@ -49,10 +49,9 @@ body {
 
 
 
-
-/* img {
-    width: 200px;
-}  */
+img {
+    width: 100%;
+}
 
 
 
@@ -66,8 +65,7 @@ body {
     color: #000000;
     text-decoration: none;
     font-size: 28px;
-    max-width: 150px;
-    min-width: 640px;
+    max-width: 250px;
 }
 
 
@@ -217,10 +215,8 @@ text-align: center;
 
 a.link {
     color: #BC5D06;
-    padding: 20px 20px;
+    padding: 0 20px;
     text-decoration:none;
-    text-align: center;
-    display: block;
 }
 
 .link:hover {
@@ -254,7 +250,7 @@ height: auto;
 }
 
 #work .row {
-    padding: 25px 25px; border-bottom: 1px solid #4a4a4a;
+    padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
 }
 
 
@@ -273,12 +269,9 @@ height: auto;
 
 #contact {
     background-color: #F2F2F2;
-    padding-top: 50px;
+    padding-top: 10px;
     border-top: 2px solid #989898;
     text-align:center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     }
     
     
@@ -287,16 +280,6 @@ height: auto;
         padding: 0 15px;
     }
 
-
-.container_image ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.container_image svg{
-    width : 25%;
-}
 
  .social-link a {
     text-decoration: none;
@@ -321,16 +304,6 @@ height: auto;
      text-decoration: none;
      margin-right: 10px;
  }
-
-
-
-
-
-
-
-
-
-
 
 
  
@@ -475,14 +448,6 @@ padding: 14px 20px;
 
 
 
-/* Flexbox project page */
-
-ul.design progress {
-    display: flex;
-}
-
-
-
 
 /* CSS Animation */
 
@@ -562,52 +527,3 @@ ul.design progress {
   text-decoration: none;
   text-align: center;
 }
-
-
-/* desig_process_images */
-
-.design_process_images ul {
-    list-style-type: none;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.design_process_images li {
-    width: 30%;
-}
-
-@media screen and (max-width: 600px) {
-    .design_process_images li {
-      width : 100%;
-    }
-  .color_palette_discription img{
-        width:100%;
-      }
-  }
-
-
-  /* user_flow_image */
-
-  .user_flow_image img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* color_palette_discription */
-
-  .color_palette_discription {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .color_palette_discription p, .color_palette_discription img{
-    width:50%;
-  }

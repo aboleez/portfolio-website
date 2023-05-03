@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <i class="fa-light fa-bars"></i>
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,18 @@
                    <!-- Navigation Bar -->
                    <div class="navbar">
                     <div class="align-left">
+                        <div class="navtoggle" id="navtoggle"></div>
                         <h1><a class="logo" href="#">@AboleeZ</a></h1>
                     </div>
-                    <div class="align-right">
-                        <a href="index.html" class="navigation">Work</a>
-                        <a href="about.html" class="navigation">About</a>
-                        <a href="#contact" class="navigation">Contact</a>
-                    </div>
-                </div>
+                        <div class="align-right">
+                            <nav>
+                            <a href="index.html" class="navigation">Work</a>
+                            <a href="about.html" class="navigation">About</a>
+                            <a href="#contact" class="navigation">Contact</a>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                            </nav>
+                        </div>
+                     </div>
 
                 </div>
             </div>
@@ -53,23 +57,68 @@
         <div id="work">
             <div class="container"><!-- container-->
                 <h2>My Work</h2> 
-                <div class="row"> <!-- row-->
-                    <div class="column col-md-6 col-lg-7">
-                        <picture> <!-- column left-->
-                            <source srcset="img/petsfair/3.png" media="(max-width:767px)">
-                            <img src="img/petsfair/3.1.png" alt="My Image">
-                        </picture>
-                    </div>
-                    <div> <!-- column right-->
-                        <div class="column col-md-6 col-lg-5">
-                            <h3>PetsFair: A pet-centric app</h3>
-                            <p>PetsFair is a pet-centric app that provides services like <br>pet adoption, healthcare, and finding the right <br>pet sitter at your fingertips.</p>
-                            <p>Contribution: UX research, UI design and branding.</p>
-                            <a href="projectpetsfair.html" class="button">View project</a>
+
+                <div class="container">
+                    <div class="row"><!-- row-->
+                        <div class="align-left">
+                             <div class="column col-md-6 col-lg-7">
+                                <picture> <!-- column left-->
+                                    <source srcset="img/petsfair/3.png" media="(max-width:280px)">
+                                    <img src="img/petsfair/3.1.png" alt="My Image">
+                                </picture>
+
+                                <div class="column col-md-6 col-lg-5">
+                                    <h3>CSS Animation</h3>
+                                    <p> This is a practice CSS Animation</p>                
+                                    <p>Contribution: UX research, UI design and branding.</p>
+                                    <a href="#" class="button">View project</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
                 <br>
+
+                <div class="container">
+                    <div class="row"><!-- row-->
+                        <div class="align-left">
+                             <div class="column col-md-6 col-lg-7">
+                                <picture><!-- column left-->
+
+                                    <source srcset="img/Platter/4.png" media="(max-width:767px)">
+                                    <img src="img/Platter/4.1.png" alt="My Image">
+                                 </picture>
+
+                                <div class="column col-md-6 col-lg-5">
+                                    <h3>CSS Animation</h3>
+                                    <p> This is a practice CSS Animation</p>                
+                                    <p>Contribution: UX research, UI design and branding.</p>
+                                    <a href="#" class="button">View project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="row"><!-- row-->
                     <picture><!-- column left-->
                         <div class="column col-md-6 col-lg-7">
@@ -738,6 +787,8 @@
                     <p>Copyright AboleeZadbuke 2023-2024</p>
                 </div>
         </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
   
     </body>
