@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 28px; /* sets font-size to 28px */
   line-height: 1.6; /* sets line height to 1.6 * the font-size */
@@ -72,6 +76,57 @@ header {
   text-decoration: none;
   font-size: 28px;
   max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid rgb(79, 122, 165);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+nav > ul > li > a:hover {
+  color: #868b96;
 }
 
 /* MAIN STYLING */
@@ -225,14 +280,37 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 10px;
+    padding: 20px 0;
     width: auto;
   }
 
-  .navigation {
-    width: 100%;
-    margin-top: 4px;
+  .navtoggle.responsive nav {
+    padding: 0px 0 0;
+  }
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+    float: right;
+    margin-top: -30px;
+  }
+
+  nav > ul > li {
     display: inline-block;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0px 0;
+    border-top: 0px solid rgb(79, 122, 165);
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-6 {
@@ -394,118 +472,6 @@ ul.design progress {
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-/* Style the top navigation bar */
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-
-.navtoggle.responsive li {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 12px 0;
-}
-
-.navtoggle li:not(:last-child):hover {
-  color: #000000;
-  transform: scale(1.05);
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
-nav > ul > li > a {
-  text-decoration: none;
-  color: #444444;
-  padding: 0 15px;
-  text-transform: uppercase;
-}
-
-.container {
-  max-width: 1200px;
-  padding: 0 15px;
-}
-
-.color {
-  height: 1200px;
-  background-color: #f3f3f3;
-}
-
-#contact {
-  margin-top: 40px;
-  padding: 40px 0;
-  background-color: #f6f6f6;
-}
-
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 25px 0;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 0px;
-  }
-
-  .navtoggle.responsive nav {
-    padding: 0px 0 0;
-  }
-
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  .navtoggle.responsive li {
-    padding: 0px 0;
-    border-top: 0px solid rgb(79, 122, 165);
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  .container {
-    margin: 0 auto;
-    padding: 0 0px;
-  }
 }
 
 /* desig_process_images */
