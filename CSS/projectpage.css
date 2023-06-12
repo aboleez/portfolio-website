@@ -196,7 +196,7 @@ main {
 }
 
 .button:active {
-  background-color: #34a5a1;
+  background-color:  #1F6260;
   color: #ffffff;
   font-weight: 500;
 }
@@ -281,7 +281,7 @@ img {
 .social-link a {
   text-decoration: none;
   margin: 0 10px;
-  color: #000000;
+  color: #006aff;
   width: 10px;
 }
 
