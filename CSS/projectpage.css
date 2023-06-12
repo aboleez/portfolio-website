@@ -11,27 +11,35 @@ html {
 }
 
 h1 {
-  font-size: 28px; /* sets font-size to 28px */
-  line-height: 1.6; /* sets line height to 1.6 * the font-size */
+  font-size: 28px;
+  /* sets font-size to 28px */
+  line-height: 1.6;
+  /* sets line height to 1.6 * the font-size */
   text-align: center;
 }
 
 h2 {
-  font-size: 24px; /* sets font-size to 24px */
-  line-height: 1.6; /* sets line height to 1.6 * the font-size */
+  font-size: 24px;
+  /* sets font-size to 24px */
+  line-height: 1.6;
+  /* sets line height to 1.6 * the font-size */
   text-align: center;
   margin: 0%;
   padding: 30px;
 }
 
 h3 {
-  font-size: 21px; /* sets font-size to 24px */
-  line-height: 1.6; /* sets line height to 1.6 * the font-size */
+  font-size: 21px;
+  /* sets font-size to 24px */
+  line-height: 1.6;
+  /* sets line height to 1.6 * the font-size */
 }
 
 h4 {
-  font-size: 18px; /* sets font-size to 24px */
-  line-height: 1.6; /* sets line height to 1.6 * the font-size */
+  font-size: 18px;
+  /* sets font-size to 24px */
+  line-height: 1.6;
+  /* sets line height to 1.6 * the font-size */
   text-align: center;
   margin-top: 00%;
 }
@@ -40,14 +48,17 @@ h4 {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px; /* sets font-size to 18px */
-  line-height: 1.6; /* sets line height to 1.6 * the font-size */
+  font-size: 18px;
+  /* sets font-size to 18px */
+  line-height: 1.6;
+  /* sets line height to 1.6 * the font-size */
   font-weight: 400;
 }
 
 p {
   padding: 1%;
 }
+
 /* img {
     width: 200px;
 }  */
@@ -59,9 +70,11 @@ header {
   padding: 10px 0;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px; /*sets font-size to 21px*/
+  font-size: 18px;
+  /*sets font-size to 21px*/
   background-color: #f2f2f2;
-  margin: 0; /*adds 10px outer on all sides*/
+  margin: 0;
+  /*adds 10px outer on all sides*/
   text-align: center;
   position: relative;
   width: 100%;
@@ -78,7 +91,7 @@ header {
   max-width: 250px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -117,7 +130,7 @@ nav > ul {
   padding: 0 0 10px;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -125,14 +138,14 @@ nav > ul > li > a {
   color: #4a4a4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #868b96;
 }
 
 /* MAIN STYLING */
 
 main {
-  padding-top: none;
+  padding-top: 0px;
 }
 
 #hero {
@@ -144,11 +157,13 @@ main {
 }
 
 #hero h1 {
-  text-align: center; /* center alignment to the title */
+  text-align: center;
+  /* center alignment to the title */
 }
 
 #hero p {
-  text-align: center; /* center alignment to the title */
+  text-align: center;
+  /* center alignment to the title */
 }
 
 #hero span {
@@ -208,6 +223,11 @@ a.link {
   height: auto;
 }
 
+.petfair_image_container
+img {
+  width: 100%;
+}
+
 /* LAYOUT STYLING */
 
 .container {
@@ -217,7 +237,8 @@ a.link {
 }
 
 .row {
-  margin: 10px 0; /*  20px top and bottom, 0 left and right */
+  margin: 10px 0;
+  /*  20px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -260,7 +281,7 @@ a.link {
 .social-link a {
   text-decoration: none;
   margin: 0 10px;
-  color: rgb(255, 179, 0);
+  color: #006aff;
   width: 10px;
 }
 
@@ -271,6 +292,10 @@ a.link {
 .socials a {
   text-decoration: none;
   margin-right: 10px;
+}
+
+ion-icon {
+  font-size: 40px;
 }
 
 /* ==============================
@@ -288,7 +313,7 @@ Medium devices (640px and larger)
     padding: 0px 0 0;
   }
 
-  nav > ul {
+  nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 1em 0;
@@ -296,7 +321,7 @@ Medium devices (640px and larger)
     margin-top: -30px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -347,22 +372,19 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
 
 /* Flexbox work start - Index */
 
@@ -431,6 +453,7 @@ ul.design progress {
   from {
     fill: #edc655;
   }
+
   to {
     fill: #f76414;
   }
@@ -448,6 +471,7 @@ ul.design progress {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -465,6 +489,7 @@ ul.design progress {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
@@ -494,6 +519,7 @@ ul.design progress {
   .design_process_images li {
     width: 100%;
   }
+
   .color_palette_discription img {
     width: 100%;
   }
@@ -522,6 +548,7 @@ ul.design progress {
 .color_palette_discription p {
   width: 60%;
 }
+
 .color_palette_discription img {
   width: 40%;
 }
